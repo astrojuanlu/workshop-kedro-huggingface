@@ -7,4 +7,5 @@ openai
 polars
 praw
 pydantic
+python-dotenv
 # transformers[torch]  # See transformers-requirements.in
