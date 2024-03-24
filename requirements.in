@@ -1,4 +1,6 @@
 kedro==0.19.3
+# https://github.com/astral-sh/uv/issues/1620
+# kedro-airflow @ git+https://github.com/kedro-org/kedro-plugins.git@main#directory=kedro-airflow
 kedro-viz==8.0.1
 kedro-datasets[polars,huggingface]==2.1.0
 kedro-init @ git+https://github.com/astrojuanlu/kedro-init.git
