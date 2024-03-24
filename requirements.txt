@@ -42,7 +42,9 @@ binaryornot==0.4.4
 bleach==6.1.0
     # via nbconvert
 build==1.1.1
-    # via kedro
+    # via
+    #   kedro
+    #   pygetimportables
 cachetools==5.3.3
     # via kedro
 certifi==2024.2.2
@@ -60,6 +62,7 @@ click==8.1.7
     # via
     #   cookiecutter
     #   kedro
+    #   kedro-init
     #   uvicorn
 comm==0.2.2
     # via ipykernel
@@ -82,7 +85,9 @@ executing==2.0.1
 fastapi==0.110.0
     # via kedro-viz
 fastjsonschema==2.19.1
-    # via nbformat
+    # via
+    #   nbformat
+    #   validate-pyproject
 fqdn==1.5.1
     # via jsonschema
 fsspec==2024.3.1
@@ -118,6 +123,10 @@ importlib-metadata==7.1.0
     # via kedro
 importlib-resources==6.4.0
     # via kedro
+installer==0.7.0
+    # via
+    #   kedro-init
+    #   pygetimportables
 ipykernel==6.29.3
     # via jupyterlab
 ipython==8.22.2
@@ -186,8 +195,10 @@ jupyterlab-server==2.25.4
 kedro==0.19.3
     # via
     #   kedro-datasets
+    #   kedro-init
     #   kedro-viz
 kedro-datasets==2.1.0
+kedro-init @ git+https://github.com/astrojuanlu/kedro-init.git@bffb36c8b452ef50654eb7782abb126eb4345642
 kedro-viz==8.0.1
 lazy-loader==0.3
     # via kedro-datasets
@@ -299,13 +310,17 @@ pydantic==2.6.4
     #   openai
 pydantic-core==2.16.3
     # via pydantic
+pygetimportables==0.2.1
+    # via kedro-init
 pygments==2.17.2
     # via
     #   ipython
     #   nbconvert
     #   rich
 pyproject-hooks==1.0.0
-    # via build
+    # via
+    #   build
+    #   pygetimportables
 python-dateutil==2.9.0.post0
     # via
     #   arrow
@@ -406,6 +421,8 @@ tinycss2==1.2.1
     # via nbconvert
 toml==0.10.2
     # via kedro
+tomlkit==0.12.4
+    # via kedro-init
 toposort==1.10
     # via kedro
 tornado==6.4
@@ -454,6 +471,8 @@ uvicorn==0.27.1
     # via kedro-viz
 uvloop==0.19.0
     # via uvicorn
+validate-pyproject==0.16
+    # via pygetimportables
 watchfiles==0.21.0
     # via uvicorn
 watchgod==0.8.2
