@@ -6,6 +6,8 @@ Material for the workshop "Who needs ChatGPT? Rock solid AI pipelines with Huggi
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/astrojuanlu/workshop-kedro-huggingface/)
 
+![Architecture](./kedro-hf.png)
+
 ## Links
 
 - Kedro documentation https://docs.kedro.org/en/0.19.3/
