@@ -1,0 +1,8 @@
+kedro==0.19.3
+kedro-viz==8.0.1
+kedro-datasets[polars]==2.1.0
+notebook
+polars
+praw
+pydantic
+transformers[torch]
