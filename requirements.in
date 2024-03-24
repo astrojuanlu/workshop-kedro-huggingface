@@ -5,7 +5,7 @@ kedro-init @ git+https://github.com/astrojuanlu/kedro-init.git
 notebook
 ollama
 openai
-polars
+polars[deltalake]
 praw
 pydantic
 python-dotenv
