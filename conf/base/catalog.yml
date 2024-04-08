@@ -2,3 +2,21 @@ submissions-raw:
   type: reddit_summarizer.datasets.DeltaPolarsDataset
   filepath: s3://reddit-submissions/submissions-raw
   credentials: minio_object_store
+
+submissions-summaries:
+  type: reddit_summarizer.datasets.DeltaPolarsDataset
+  filepath: s3://reddit-submissions/submissions-summaries
+  credentials: minio_object_store
+  save_args:
+    mode: "overwrite"
+
+summarization-model:
+  type: huggingface.HFTransformerPipelineDataset
+  task: summarization
+  # This is the default model, but declaring it helps with reproducibility
+  model_name: sshleifer/distilbart-cnn-12-6
+
+fill-mask-model:
+  type: huggingface.HFTransformerPipelineDataset
+  task: fill-mask
+  model_name: Twitter/twhin-bert-base
