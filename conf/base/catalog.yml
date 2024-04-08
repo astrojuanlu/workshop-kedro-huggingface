@@ -1,0 +1,4 @@
+submissions-raw:
+  type: reddit_summarizer.datasets.DeltaPolarsDataset
+  filepath: s3://reddit-submissions/submissions-raw
+  credentials: minio_object_store

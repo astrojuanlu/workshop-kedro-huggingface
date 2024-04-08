@@ -1,0 +1,36 @@
+[project]
+name = "reddit-summarizer"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Juan Luis Cano Rodríguez", email = "juan_luis_cano@mckinsey.com"},
+]
+dependencies = [
+    "kedro==0.19.3",
+    "kedro-viz==8.0.1",
+    "kedro-datasets[huggingface,polars]==2.1.0",
+    "kedro-init @ git+https://github.com/astrojuanlu/kedro-init.git",
+    "notebook",
+    "ollama",
+    "openai",
+    "polars[deltalake]",
+    "praw",
+    "pydantic",
+    "python-dotenv",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.kedro]
+project_name = "reddit-summarizer"
+package_name = "reddit_summarizer"
+kedro_init_version = "0.19.3"
