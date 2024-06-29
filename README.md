@@ -23,7 +23,7 @@ catalog = DataCatalog.from_config(config_loader["catalog"])
 catalog.load("ds_name")  # Loads the dataset corresponding to the `ds_name` entry in `catalog.yml`
 ```
 
-### Kedro pipelines using Kedro as a framework
+### Kedro pipelines using Kedro as a framework
 
 ```bash
 $ uv pip install pdm && pdm init
@@ -47,7 +47,7 @@ $ # ...
 $ kedro run
 ```
 
-### Visualising the structure of the pipeline
+### Visualising the structure of the pipeline
 
 ```
 $ kedro viz run
